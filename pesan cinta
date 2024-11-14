@@ -1,0 +1,17 @@
+import time
+
+def pesan_cinta():
+    pesan = [
+        "Kamu adalah bintang di hidupku.",
+        "Setiap detik bersamamu adalah berharga.",
+        "Cintaku padamu seperti langit yang tak berbatas.",
+        "Kamu membuatku tersenyum bahkan di hari-hari terburuk.",
+        "Aku mencintaimu lebih dari kata-kata bisa ungkapkan."
+    ]
+    
+    print("Pesan untukmu, Sayang:")
+    for p in pesan:
+        print(f"- {p}")
+        time.sleep(2)  # Jeda 2 detik antar pesan
+
+pesan_cinta()
