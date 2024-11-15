@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Musik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://example.com/path-to-your-image.jpg');
+            background-size: cover;
+            background-color: black;
+            background-position: center;
+            text-align: center;
+            padding: 50px;
+            color: rgb(3, 0, 0);
+        }
+        
+        h1 {
+            color: #FF8000;
+        }
+        
+        h2 {
+            color: chartreuse;
+        }
+        
+        h3 {
+            color: blueviolet;
+        }
+        
+        h4 {
+            color: deeppink;
+        }
+        
+        h5 {
+            color: chocolate;
+        }
+        
+        #lyrics {
+            margin-top: 20px;
+            font-size: 18px;
+            white-space: pre-wrap;
+            /* Mempertahankan spasi dan baris baru */
+            color: #FF8000;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #FF8000;
+        }
+        
+        .whatsapp-logo {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Selamat Datang di Program Musik</h1>
+    <h2>THIS PROGRAM CREATE BY : FAJAR DWI CAHYA</h2>
+    <h3>IF YOU WANT TO REQUEST A LYRICS </h3>
+    <h4> FIND ME ON TIKTOK : @jarea44 </h4>
+    <h5>List Menu dan Fitur yang Kami Sediakan:</h5>
+    <button onclick="showLyrics()">Lirik Lagu</button>
+    <button onclick="hubungi()">Hubungi kami <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/whatsapp.svg" class="whatsapp-logo" alt="WhatsApp Logo"></button>
+
+    <div id="lyrics"></div>
+
+    <script>
+        function jeda() {
+            return new Promise(resolve => setTimeout(resolve, 100)); // Jeda 100ms antara huruf
+        }
+
+        async function showLyrics() {
+            const lirik = [
+                "Pada akhirnya pisah juga :)",
+                "...........................",
+                "Aku tak kau anggap pada cerita",
+                "Aku tak kau anggap pada derita",
+                "Tapi kamu berlaku bagai pemilik ragaku",
+                "Tapi aku letih juga",
+                "Lebih baik kita masing masing"
+            ];
+
+            const lyricsDiv = document.getElementById('lyrics');
+            lyricsDiv.innerHTML = ''; // Kosongkan div sebelum menampilkan lirik
+
+            for (let i = 0; i < lirik.length; i++) {
+                for (let char of lirik[i]) { // Loop melalui setiap karakter
+                    lyricsDiv.innerHTML += char; // Tampilkan karakter
+                    await jeda(); // Tunggu jeda sebelum melanjutkan
+                }
+                lyricsDiv.innerHTML += '<br>'; // Pindah ke baris berikutnya
+            }
+        }
+
+        async function hubungi() {
+            const whatsappUrl = "https://wa.me/+6281917760823";
+            window.open(whatsappUrl, "_blank");
+        }
+    </script>
+
+</body>
+
+</html>
