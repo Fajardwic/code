@@ -1,0 +1,59 @@
+/* Reset beberapa gaya default */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mengatur gaya untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif; /* Jenis font */
+    line-height: 1.6; /* Jarak antar baris */
+    background-color: #f4f4f4; /* Warna latar belakang */
+    padding: 20px; /* Padding untuk body */
+}
+
+/* Gaya untuk header */
+header {
+    background: #35424a; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    padding: 20px; /* Padding untuk header */
+    text-align: center; /* Teks rata tengah */
+}
+
+/* Gaya untuk navigasi */
+nav ul {
+    list-style: none; /* Menghapus bullet list */
+    padding: 0; /* Menghapus padding */
+}
+
+nav ul li {
+    display: inline; /* Menampilkan item list secara horizontal */
+    margin: 0 15px; /* Margin antar item */
+}
+
+nav ul li a {
+    color: white; /* Warna tautan */
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+}
+
+/* Gaya untuk konten utama */
+main {
+    margin-top: 20px; /* Margin atas untuk main */
+}
+
+/* Gaya untuk section */
+section {
+    background: white; /* Warna latar belakang section */
+    padding: 20px; /* Padding untuk section */
+    margin: 10px 0; /* Margin atas dan bawah */
+    border-radius: 5px; /* Sudut melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+/* Gaya untuk footer */
+footer {
+    text-align: center; /* Teks rata tengah */
+    margin-top: 20px; /* Margin atas untuk footer */
+    font-size: 0.9em; /* Ukuran font lebih kecil */
+    color: #777; /* Warna teks footer */
+}
